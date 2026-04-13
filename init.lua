@@ -602,7 +602,15 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         -- gopls = {},
-        -- pyright = {},
+        basedpyright = {
+          settings = {
+             basedpyright = {
+              analysis = {
+                typeCheckingMode = "recommended"
+              }
+            }
+          }
+        },
         -- rust_analyzer = {},
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
